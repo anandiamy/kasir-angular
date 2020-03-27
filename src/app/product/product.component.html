@@ -1,0 +1,33 @@
+<mat-sidenav-container class="sidebar-container">
+    <mat-sidenav mode="side" opened>
+        <h1>Total : Rp. 35.000</h1>
+        <mat-list role="list">
+            <mat-list-item role="listitem">Semangka</mat-list-item>
+            <mat-list-item style="font-size: 12px; height: 5px; margin-bottom: 10px">Jumlah : 3</mat-list-item>
+            <mat-list-item style="font-size: 20px; height: 5px; margin-bottom: 10px">Rp 20.000</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem">Mangga</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem">Alpukat</mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-grid-list cols="3" rowHeight="480px">
+            <mat-grid-tile *ngFor="let product of productList">
+                <mat-card class="product-card">
+                    <mat-card-header>
+                        <mat-card-title>{{ product.name }}</mat-card-title>
+                        <mat-card-subtitle>Rp. {{ product.harga }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="{{ product.image }}" alt="{{ product.name }}">
+                    <mat-card-content>
+                        <p>{{ product.desc }}</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>Tambah ke keranjang</button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-sidenav-content>
+</mat-sidenav-container>
