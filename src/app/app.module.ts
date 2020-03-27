@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { Error404Component } from './error404/error404.component'
+import {ModalModule} from 'ngx-bootstrap'
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { Error404Component } from './error404/error404.component'
         AppRoutingModule,
         HttpClientModule,
         FormsModule,
+        ModalModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]

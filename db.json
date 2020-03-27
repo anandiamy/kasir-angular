@@ -34,7 +34,7 @@
       "id": 1,
       "name": "Semangka",
       "category_id": 1,
-      "harga": 20000,
+      "price": 20000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lore ipsum dolor sit amet"
     },
@@ -42,7 +42,7 @@
       "id": 2,
       "name": "Melon",
       "category_id": 1,
-      "harga": 20500,
+      "price": 20500,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -50,7 +50,7 @@
       "id": 3,
       "name": "Bayam",
       "category_id": 2,
-      "harga": 15000,
+      "price": 15000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -58,7 +58,7 @@
       "id": 4,
       "name": "Kol",
       "category_id": 2,
-      "harga": 13000,
+      "price": 13000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -66,7 +66,7 @@
       "id": 5,
       "name": "Jus Mangga",
       "category_id": 3,
-      "harga": 9000,
+      "price": 9000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -74,7 +74,7 @@
       "id": 6,
       "name": "Jus Alpukat",
       "category_id": 3,
-      "harga": 5000,
+      "price": 5000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -82,7 +82,7 @@
       "id": 7,
       "name": "Sprite",
       "category_id": 4,
-      "harga": 1200,
+      "price": 1200,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
@@ -90,7 +90,7 @@
       "id": 8,
       "name": "Fanta",
       "category_id": 4,
-      "harga": 4000,
+      "price": 4000,
       "image": "https://cairofood.id/wp-content/uploads/penggunaan-buah-pada-makanan-256x256.jpg",
       "desc": "lorem ipsum dolor sit amet"
     }

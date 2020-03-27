@@ -1,1 +1,60 @@
-<p>cart works!</p>
+<div class="col-md-12">
+    <div class="panel panel-default" *ngFor="let item of cart">
+        <div class="panel-body">
+            {{item.name}} <br>
+            <span>Rp. {{item.price}} x {{item.count}}</span>
+            <span class="pull-right"><b>Rp. {{item.price * item.count}}</b></span>
+        </div>
+        <div class="panel-footer">
+            <button (click)="remove(item.name)" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i>
+            </button>
+            <div class="btn-group pull-right" role="group">
+                <button (click)="reduceCount(item.name)" type="button" class="btn btn-primary btn-sm"><i
+                        class="glyphicon glyphicon-minus"></i></button>
+                <button (click)="addCount(item.name)" type="button" class="btn btn-primary btn-sm"><i
+                        class="glyphicon glyphicon-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    Total :
+</div>
+<div class="col-md-6 text-right">
+    <b style="font-size: 18px">Rp. {{total}}</b>
+</div>
+<div class="col-md-12 text-right" style="margin-top: 10px">
+    <button (click)="checkout(payment)" class="btn btn-primary">Checkout <i class="glyphicon glyphicon-arrow-right"></i>
+    </button>
+</div>
+
+<ng-template #payment>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Payment</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="panel panel-default" *ngFor="let item of cart">
+            <div class="panel-body">
+                {{item.name}} <br>
+                <span>Rp. {{item.price}} x {{item.count}}</span>
+                <span class="pull-right"><b>Rp. {{item.price * item.count}}</b></span>
+            </div>
+            <div class="panel-footer">
+                <button (click)="remove(item.name)" class="btn btn-danger btn-sm"><i
+                        class="glyphicon glyphicon-trash"></i></button>
+                <div class="btn-group pull-right" role="group">
+                    <button (click)="reduceCount(item.name)" type="button" class="btn btn-primary btn-sm"><i
+                            class="glyphicon glyphicon-minus"></i></button>
+                    <button (click)="addCount(item.name)" type="button" class="btn btn-primary btn-sm"><i
+                            class="glyphicon glyphicon-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button (click)="paymentBtn()" class="btn btn-success">Cetak</button>
+    </div>
+</ng-template>
